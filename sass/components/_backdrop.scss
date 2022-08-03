@@ -8,10 +8,11 @@
     background-color: rgba(0, 0, 0, 0.2);
 
     transition: opacity var(--tran-dur-and-tim-fun), visibility var(--tran-dur-and-tim-fun);
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        }
 }
 
-.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-}

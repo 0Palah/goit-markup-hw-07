@@ -2,32 +2,30 @@
     padding-bottom: 47px;
 }
 
-
-
 .features-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-}
 
-.features-list .item {
-    width: calc((100% - 90px) / 4);
-}
+    .item {
+        width: calc((100% - 90px) / 4);
+    }
 
-.features-list .card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 120px;
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 120px;
 
-    border-radius: 4px;
-    margin-bottom: 30px;
-    background: var(--secondary-background-color);
-}
+        border-radius: 4px;
+        margin-bottom: 30px;
+        background: var(--secondary-background-color);
+    }
 
-.features-list .icon {
-    width: 70px;
-    height: 70px;
+    .features-list .icon {
+        width: 70px;
+        height: 70px;
+    }
 }
 
 /* Назва особливості */
