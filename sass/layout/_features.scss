@@ -9,35 +9,33 @@
 
     .item {
         width: calc((100% - 90px) / 4);
+    
+        .card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 120px;
+
+            border-radius: 4px;
+            margin-bottom: 30px;
+            background: var(--secondary-background-color);
+        }
+        
+        .icon {
+            width: 70px;
+            height: 70px;
+        }
+
+        .features-title {
+            font-size: 14px;
+            line-height: 1.14;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .features-text {
+            line-height: 1.71;
+            color: var(--secondary-text-color);
+        }
     }
-
-    .card {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 120px;
-
-        border-radius: 4px;
-        margin-bottom: 30px;
-        background: var(--secondary-background-color);
-    }
-
-    .features-list .icon {
-        width: 70px;
-        height: 70px;
-    }
-}
-
-/* Назва особливості */
-.features-title {
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-/* Текст особливості */
-.features-text {
-    line-height: 1.71;
-    color: var(--secondary-text-color);
 }
