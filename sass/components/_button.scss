@@ -19,21 +19,15 @@
     cursor: pointer;
 
     transition: background-color var(--tran-dur-and-tim-fun);
-}
 
-.hero-button:hover,
-.hero-button:focus,
-.modal-button-send:hover,
-.modal-button-send:focus,
-.footer-button:hover,
-.footer-button:focus {
-    background-color: var(--button-hover-color);
-}
+    &:hover,
+    &:focus {
+        background-color: var(--button-hover-color);
+    }
 
-.hero-button:active,
-.modal-button-send:active,
-.footer-button:active {
-    color: var(--accent-color);
-    background-color: var(--primary-background-color);
-    border-color: var(--accent-color);
-}   
+    &:active {
+        color: var(--accent-color);
+        background-color: var(--primary-background-color);
+        border-color: var(--accent-color);
+    }
+}

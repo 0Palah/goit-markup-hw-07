@@ -1,15 +1,3 @@
-.modal-title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    margin-bottom: 12px;
-}
-
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.8);
-}
-
 .modal {
     position: absolute;
     top: 50%;
@@ -24,6 +12,18 @@
     transform: translate(-50%, -50%) scale(1);
 
     transition: transform var(--tran-dur-and-tim-fun), visibility var(--tran-dur-and-tim-fun);
+
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(0.8);
+        }
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 12px;
 }
 
 .contact-form {
@@ -57,6 +57,11 @@
     letter-spacing: 0.01em;
     outline: none;
     transition: border-color var(--tran-dur-and-tim-fun);
+
+    &:focus {
+        color: var(--accent-color);
+        border-color: var(--accent-color);
+        }
 }
 
 .modal-input-icon {
@@ -66,16 +71,10 @@
     transform: translateY(-50%);
     fill: currentColor;
     transition: fill var(--tran-dur-and-tim-fun);
-}
 
-.form-input:focus,
-.modal-textarea-comment:focus {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
-}
-
-.form-input:focus+.modal-input-icon {
-    fill: var(--accent-color);
+    .form-input:focus + & {
+         fill: var(--accent-color);
+        }
 }
 
 .modal-textarea-comment {
@@ -91,6 +90,11 @@
     letter-spacing: 0.01em;
     outline: none;
     transition: border-color var(--tran-dur-and-tim-fun);
+
+        &:focus {
+            color: var(--accent-color);
+            border-color: var(--accent-color);
+            }
 }
 
 .user-policy-checkbox-desc {
@@ -118,15 +122,15 @@
     cursor: pointer;
     outline: none;
     transition: border-color var(--tran-dur-and-tim-fun), background-color var(--tran-dur-and-tim-fun);
-}
 
-.user-policy-checkbox-input:focus+label .user-policy-checkbox-frame {
-    border-color: var(--accent-color);
-}
-
-.user-policy-checkbox-input:checked+label .user-policy-checkbox-frame {
-    border-color: var(--accent-color);
-    background-color: var(--accent-color);
+    .user-policy-checkbox-input:focus+label & {
+        border-color: var(--accent-color);
+        }
+        
+    .user-policy-checkbox-input:checked+label & {
+        border-color: var(--accent-color);
+        background-color: var(--accent-color);
+        }
 }
 
 .user-policy-checkbox-icon {
@@ -166,9 +170,9 @@
 .modal-close-icon {
     fill: #000;
     transition: fill var(--tran-dur-and-tim-fun);
-}
 
-.btn-modal-close:hover .modal-close-icon,
-.btn-modal-close:focus .modal-close-icon {
-    fill: var(--accent-color);
+    .btn-modal-close:hover &,
+    .btn-modal-close:focus & {
+        fill: var(--accent-color);
+    }
 }
