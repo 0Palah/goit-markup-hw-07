@@ -22,8 +22,7 @@
 }
 
 .site-nav__link {
-    font-weight: 500;
-    line-height: 1.14;
+    @include font(14px, 500, 16px);
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
 
@@ -71,9 +70,7 @@
 .contacts-nav__link {
     display: flex;
     align-items: center;
-
-    font-weight: 500;
-    line-height: 1.14;
+    @include font(14px, 500, 16px);
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
 
