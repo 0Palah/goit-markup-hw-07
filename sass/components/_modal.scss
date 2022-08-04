@@ -86,10 +86,10 @@
     outline: none;
     transition: border-color var(--tran-dur-and-tim-fun);
 
-        &:focus {
-            color: var(--accent-color);
-            border-color: var(--accent-color);
-            }
+    &:focus {
+        color: var(--accent-color);
+        border-color: var(--accent-color);
+        }
 }
 
 .user-policy-checkbox-desc {
