@@ -13,9 +13,10 @@
         margin-right: 70px;
     }
 
-    .logo-studio {
-        color: var(--text-white-color);
-    }
+}
+
+.logo_theme_dark {
+    color: var(--text-white-color);
 }
 
 .footer-address {
@@ -105,6 +106,6 @@
     line-height: 1.15;
 }
 
-.footer-button {
+.button-primary {
     fill: currentColor;
 }

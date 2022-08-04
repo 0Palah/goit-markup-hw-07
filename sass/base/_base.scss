@@ -5,6 +5,7 @@
     letter-spacing: 0.03em;
     font-size: 14px;
 }
+
 h1,
 h2,
 h3,
@@ -23,14 +24,12 @@ ol {
     margin-bottom: 0;
 }
 
-/* Прибирає нижній відступ в .img */
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-/* Списки */
 .list {
     list-style: none;
 }
@@ -47,8 +46,3 @@ img {
     margin-bottom: 50px;
 }
 
-.speciality .list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}

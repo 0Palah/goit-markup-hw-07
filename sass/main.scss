@@ -1,24 +1,27 @@
-@import 'base/base';
-
 @import 'utils/variables';
 @import 'utils/hidden';
+@import 'utils/mixins';
+@import 'utils/functions';
 
-@import 'components/section';
-@import 'components/container';
 
-@import 'layout/header';
+@import 'base/base';
+@import 'base/container';
+@import 'base/section';
+
 @import 'components/logo';
 @import 'components/nav';
-@import 'layout/hero';
 @import 'components/button';
 @import 'components/backdrop';
 @import 'components/modal';
+@import 'components/social';
+@import 'components/filter';
+@import 'components/works';
+
+@import 'layout/header';
+@import 'layout/hero';
 @import 'layout/features';
 @import 'layout/speciality';
 @import 'layout/team';
-@import 'components/social';
 @import 'layout/clients';
 @import 'layout/footer';
-@import 'components/filter';
-@import 'components/works';
 

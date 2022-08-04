@@ -11,71 +11,71 @@
 
 .site-nav {
     display: flex;
+}
 
-    .item {
-        padding-top: 32px;
+.site-nav__item{
+    padding-top: 32px;
 
-        &:not(:last-child) {
-            margin-right: 50px;
-        }
-    }
-
-    .link {
-        font-weight: 500;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        color: var(--primary-text-color);
-
-        transition: color var(--tran-dur-and-tim-fun);
-
-        &.current {
-            color: var(--accent-color);
-        }
-
-        &.current::after {
-            content: "";
-
-            display: block;
-            width: 100%;
-            height: 4px;
-            border-radius: 2px;
-            margin-top: 28px;
-
-            background-color: var(--accent-color);
-        }
+    &:not(:last-child) {
+        margin-right: 50px;
     }
 }
 
+.site-nav__link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+
+    transition: color var(--tran-dur-and-tim-fun);
+
+}
+
+.site-nav__link_current {
+    color: var(--accent-color);
+}
+
+.site-nav__link_current::after {
+    content: "";
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 28px;
+
+    background-color: var(--accent-color);
+}
 
 .contacts-nav {
     display: flex;
-
-    .item:not(:last-child) {
-         margin-right: 50px;
-        }
-    
-    .link {
-        display: flex;
-        align-items: center;
-
-        font-weight: 500;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        color: var(--secondary-text-color);
-
-        transition: color var(--tran-dur-and-tim-fun);
-    }
-
-    .icon {
-        width: 16px;
-        height: 12px;
-        margin-right: 10px;
-        fill: currentColor;
-    }
 
     .smartphone {
          width: 10px;
          height: 16px;
     }
 
+}
+
+.contacts-nav__item:not(:last-child) {
+    margin-right: 50px;
+    }
+
+.contacts-nav__icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+   }
+
+.contacts-nav__link {
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+
+    transition: color var(--tran-dur-and-tim-fun);
 }
