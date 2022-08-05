@@ -534,7 +534,7 @@ img {
   height: 76px;
 }
 
-.logo_theme_light {
+.logo_theme-light {
   margin-right: 93px;
 }
 
@@ -616,7 +616,7 @@ img {
   padding-top: 47px;
 }
 
-.speciality .list {
+.speciality-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -717,7 +717,7 @@ img {
   margin-right: 70px;
 }
 
-.logo_theme_dark {
+.logo_theme-dark {
   color: var(--text-white-color);
 }
 
